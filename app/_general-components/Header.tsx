@@ -2,7 +2,7 @@ import { NavigationMenuDemo } from "./Navigation";
 
 function Header() {
   return (
-    <header className="flex justify-center my-2">
+    <header className="flex  my-4 justify-center">
       <NavigationMenuDemo />
     </header>
   );

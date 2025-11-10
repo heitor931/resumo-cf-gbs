@@ -23,13 +23,18 @@ export function NavigationMenuDemo() {
 
   return (
     <NavigationMenu viewport={isMobile}>
-      <NavigationMenuList className="flex-wrap">
+      <NavigationMenuList className="flex-wrap gap-4">
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/">Home</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Resumos</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent className="z-10">
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               
-              <ListItem href="/docs" title="Matemática">
+              <ListItem href="/summary/math" title="Matemática I">
                 A Matemática é a linguagem do Universo!😍
 
               </ListItem>
@@ -49,16 +54,13 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link href="/summary">Horário</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/summary">Informações</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
+       
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link href="/summary">Eventos</Link>
