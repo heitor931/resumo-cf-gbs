@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <main>
+    <main className="h-screen">
       Enter
     </main>
   );
