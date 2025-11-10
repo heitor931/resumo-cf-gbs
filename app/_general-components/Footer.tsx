@@ -15,9 +15,9 @@ export default function Footer() {
 
         {/* Column 2 */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-white mb-3">Links rápidos</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-white">Home</Link></li>
+            <li><Link href="/" className="hover:text-white">Resumos</Link></li>
             <li><Link href="/about" className="hover:text-white">About</Link></li>
             <li><Link href="/projects" className="hover:text-white">Projects</Link></li>
             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
@@ -26,18 +26,16 @@ export default function Footer() {
 
         {/* Column 3 */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Connect</h3>
+          <h3 className="text-lg font-semibold text-white mb-3">Conectar</h3>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white">Twitter</a>
-            <a href="#" className="hover:text-white">LinkedIn</a>
-            <a href="#" className="hover:text-white">GitHub</a>
+            <a href="#" className="hover:text-white">Whatsaap</a>
           </div>
         </div>
 
       </div>
 
       <div className="text-center text-sm text-gray-500 mt-8 border-t border-gray-700 pt-6">
-        © {new Date().getFullYear()} DRM. All rights reserved.
+        © {new Date().getFullYear()} DRM. Todos direitos reservados.
       </div>
     </footer>
   );
