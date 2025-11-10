@@ -6,6 +6,21 @@
 4. Time table
 5. Picture Hub for class events
 
-
 ## Project main features
-1. Being able 
+
+1. Being able to add summaries every day
+2. Updated time table
+3. Being able to add fresh information every day
+4. Being able to add important related files of the class
+   
+----------------------------------------------
+
+## DONE
+
+
+
+## ONGOING
+
+
+
+## NEXT TASKS
