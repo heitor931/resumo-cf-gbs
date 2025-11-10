@@ -38,16 +38,16 @@ export function NavigationMenuDemo() {
                 A Matemática é a linguagem do Universo!😍
 
               </ListItem>
-              <ListItem href="/docs/installation" title="C.P.E">
+              <ListItem href="/summary/cpe" title="C.P.E">
                 Falar bem em público é uma habilidade valiosa que pode abrir portas tanto na vida pessoal quanto profissional.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Inglês">
+              <ListItem href="/summary/english" title="Inglês">
                 A língua inglesa é uma ferramenta poderosa que conecta pessoas ao redor do mundo.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Introdução á Informática">
+              <ListItem href="/summary/informatic" title="Introdução á Informática">
                 A informática é a base da era digital em que vivemos hoje.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="M.I.C">
+              <ListItem href="/summary/mic" title="M.I.C">
                 A Metodologia de Investigação Científica (MIC) é um conjunto estruturado de procedimentos e técnicas utilizados para conduzir pesquisas científicas de maneira sistemática e rigorosa.
               </ListItem>
              
