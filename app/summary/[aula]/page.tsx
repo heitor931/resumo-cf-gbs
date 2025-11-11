@@ -31,7 +31,7 @@ const mathSummaries = [
     classDate: "2025-05-05",
     classNumber: 3,
     sumId: "mth-003",
-        sumLikes:{likes:10, hearts:5, ok:2},
+        sumLikes:{likes:190, hearts:999, ok:1000},
     
   },
   {

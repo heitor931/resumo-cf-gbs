@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { TbMath } from "react-icons/tb";
 
 //import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
