@@ -74,7 +74,7 @@ type ParamProps = {
 };
 
 async function classTopic({ params }: ParamProps) {
-  const { aula } =  params
+  const { aula } = await params
 
   const generateTopicName = () => {
     if (aula === "math") {
