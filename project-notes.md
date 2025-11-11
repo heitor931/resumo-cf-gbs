@@ -17,13 +17,14 @@
 
 ## DONE
 
+1. Basic Frontend UI structure
+2. 
 
 
 ## ONGOING
 
+1. 
+
 
 
 ## NEXT TASKS
-
-
-bg-[#0D1117]

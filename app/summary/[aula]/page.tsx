@@ -74,19 +74,19 @@ type ParamProps = {
 };
 
 async function classTopic({ params }: ParamProps) {
-  const {aula} = await params
+  const { aula } =  params
 
   const generateTopicName = () => {
     if (aula === "math") {
       return "Matemática I";
     } else if(aula === "cpe") {
-      return "C.P.E";
+      return "Comunicação Pessoal e Empresarial";
     } else if(aula === "english") {
       return "Inglês";
     } else if(aula === "informatic") {
       return "Introdução á Informática";
     } else if(aula === "mic") {
-      return "M.I.C";
+      return "Metodologia de Investigação Científica";
     } else {
       return aula;
     }
@@ -97,7 +97,7 @@ async function classTopic({ params }: ParamProps) {
 
   return (
     <main className="flex flex-col">
-      <p className=" text-xl  bg-white p-1 rounded border-t-white w-fit m-auto ">
+      <p className=" text-xl  bg-white p-1 rounded border-t-white w-fit ml-3 ">
         {generateTopicName()}
       </p>
       <main className="flex gap-2 mx-4 align-top">
