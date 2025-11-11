@@ -30,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[#0D1117]`}
       >
       <Header />
+      <hr className="mx-2 border-gray-400 mb-2" />
         {children}
         <Footer />
       </body>

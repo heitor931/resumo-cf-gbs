@@ -10,8 +10,7 @@ const mathSummaries = [
     classDate: "2025-04-28, Quinta-feira",
     classNumber: 1,
     sumId: "mth-001",
-    sumLikes: 12,
-    sumDeslikes: 1,
+    sumLikes:{likes:10, hearts:5, ok:2},
   },
   {
     sumTopic: "Derivatives",
@@ -21,8 +20,8 @@ const mathSummaries = [
     classDate: "2025-05-02",
     classNumber: 2,
     sumId: "mth-002",
-    sumLikes: 20,
-    sumDeslikes: 2,
+        sumLikes:{likes:10, hearts:5, ok:2},
+
   },
   {
     sumTopic: "Integrals",
@@ -32,8 +31,8 @@ const mathSummaries = [
     classDate: "2025-05-05",
     classNumber: 3,
     sumId: "mth-003",
-    sumLikes: 15,
-    sumDeslikes: 0,
+        sumLikes:{likes:10, hearts:5, ok:2},
+    
   },
   {
     sumTopic: "Series",
@@ -42,8 +41,8 @@ const mathSummaries = [
     classDate: "2025-05-09",
     classNumber: 4,
     sumId: "mth-004",
-    sumLikes: 8,
-    sumDeslikes: 3,
+        sumLikes:{likes:10, hearts:5, ok:2},
+    
   },
   {
     sumTopic: "Linear Algebra",
@@ -53,8 +52,7 @@ const mathSummaries = [
     classDate: "2025-05-11",
     classNumber: 5,
     sumId: "mth-005",
-    sumLikes: 30,
-    sumDeslikes: 2,
+    sumLikes:{likes:10, hearts:5, ok:2},
   },
 ];
 
@@ -75,23 +73,31 @@ type ParamProps = {
   };
 };
 
-function classTopic({ params: { aula } }: ParamProps) {
-  console.log(aula);
+async function classTopic({ params }: ParamProps) {
+  const {aula} = await params
 
   const generateTopicName = () => {
     if (aula === "math") {
       return "Matemática I";
+    } else if(aula === "cpe") {
+      return "C.P.E";
+    } else if(aula === "english") {
+      return "Inglês";
+    } else if(aula === "informatic") {
+      return "Introdução á Informática";
+    } else if(aula === "mic") {
+      return "M.I.C";
+    } else {
+      return aula;
     }
 
-    if (aula === "cpe") {
-      return "C.P.E";
-    }
+    
   };
   // get data for aula
 
   return (
     <main className="flex flex-col">
-      <p className="text-red-600 text-xl bg-white p-1 rounded-md w-fit ml-4 mb-2">
+      <p className=" text-xl  bg-white p-1 rounded border-t-white w-fit m-auto ">
         {generateTopicName()}
       </p>
       <main className="flex gap-2 mx-4 align-top">
@@ -101,9 +107,9 @@ function classTopic({ params: { aula } }: ParamProps) {
           ))}
           )
         </article>
-        <article className="border-left bg-white flex-1 h-fit rounded-md p-1 flex flex-col gap-2">
-          <p className="font-bold italic">
-            Material de apoio fornecido pelo professor
+        <article className=" bg-white flex-1 h-fit rounded-md p-1 flex flex-col gap-2">
+          <p className="font-bold text-sm italic">
+            Material de estudo fornecido pelo professor/delegado.
           </p>
           {documents.map((doc, index) => (
             <DocumentTopic
